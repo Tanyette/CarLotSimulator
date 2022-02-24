@@ -9,9 +9,6 @@ namespace CarLotSimulator
             var carLot = new CarLot();
 
 
-
-
-
             var mazda = new Car();
             mazda.Year = 2016;
             mazda.Make = "Mazda";
@@ -19,6 +16,7 @@ namespace CarLotSimulator
             mazda.EngineNoise = "Zoom, Zoom";
             mazda.HonkNoise = "beeeep";
             mazda.IsDrivable = true;
+            Console.WriteLine($"Number of cars in CarLot: {CarLot.numberOfCars} ");
 
             carLot.ParkingLot.Add(mazda);
 
@@ -36,6 +34,7 @@ namespace CarLotSimulator
             carLot.ParkingLot.Add(ford);
 
             var jeep = new Car(2019, "Jeep", "Wrangler", "Vroom!", "BEEEP!", true);
+            Console.WriteLine($"Number of cars in CarLot: {CarLot.numberOfCars}");
 
             carLot.ParkingLot.Add(jeep);
 
